@@ -27,11 +27,12 @@
 
     Route::post('/auth/register', [AuthController::class, 'store']);
     Route::post('/auth/login', [AuthController::class, 'login']);   
+    Route::post('/posts', [TheNameoffController::class, 'login'])->middleware('auth:sanctum');
 </p>
 
 <p>
 
-Route::post('/posts', [TheNameoffController::class, 'login'])->middleware('auth:sanctum');
+
 
 
 </p>
